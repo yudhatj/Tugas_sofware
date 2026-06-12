@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akun Saya"
+                android:textColor="#1E255E"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <!-- PROFILE CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_profile_card"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <!-- FOTO -->
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="170dp">
+
+                    <!-- FOTO PROFILE -->
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oip__1_"/>
+
+                    <!-- BUTTON CAMERA -->
+                    <LinearLayout
+                        android:id="@+id/btnCamera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/bg_camera"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/camera"
+                            app:tint="#FFFFFF"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!-- NAMA -->
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textColor="#1E255E"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <!-- JABATAN -->
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_position"
+                    android:paddingStart="18dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="6dp"
+                    android:text=""
+                    android:textColor="#4B5CFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- MENU DATA DIRI -->
+            <LinearLayout
+                android:id="@+id/menuDataDiri"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/user_prifil"
+                    app:tint="#7A7A7A"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:text="Data Diri"
+                    android:textColor="#1E255E"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chevron_right"
+                    app:tint="#7A7A7A"/>
+
+            </LinearLayout>
+
+            <!-- MENU PENGATURAN -->
+            <LinearLayout
+                android:id="@+id/menuPengaturan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/settings"
+                    app:tint="#7A7A7A"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:text="Pengaturan"
+                    android:textColor="#1E255E"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chevron_right"
+                    app:tint="#7A7A7A"/>
+
+            </LinearLayout>
+
+            <!-- MENU PASSWORD -->
+            <LinearLayout
+                android:id="@+id/menuPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/kunci"
+                    app:tint="#7A7A7A"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:text="Ubah Password"
+                    android:textColor="#1E255E"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chevron_right"
+                    app:tint="#7A7A7A"/>
+
+            </LinearLayout>
+
+            <!-- MENU TENTANG -->
+            <LinearLayout
+                android:id="@+id/menuTentang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/badge_alert"
+                    app:tint="#7A7A7A"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:text="Tentang Aplikasi"
+                    android:textColor="#1E255E"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chevron_right"
+                    app:tint="#7A7A7A"/>
+
+            </LinearLayout>
+
+            <!-- MENU LOGOUT -->
+            <LinearLayout
+                android:id="@+id/menuKeluar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/log"
+                    app:tint="#FF4D6D"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:text="Logout"
+                    android:textColor="#FF4D6D"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- BOTTOM NAV -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="#4B5CFF"
+        app:itemTextColor="#4B5CFF"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_card_modern"
+    android:elevation="2dp"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- ICON -->
+    <ImageView
+        android:id="@+id/imgNotif"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_status_blue"
+        android:padding="12dp"
+        android:src="@drawable/bell" />
+
+    <!-- CONTENT -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- TOP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#1E255E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- MENU TITIK TIGA -->
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:padding="2dp"
+                android:src="@drawable/titik_3" />
+
+        </LinearLayout>
+
+        <!-- MESSAGE -->
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- DATE -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

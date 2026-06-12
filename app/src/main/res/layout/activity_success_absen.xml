@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#22C55E">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- ICON SUCCESS -->
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/bg_circle_check"
+                android:elevation="6dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/badge_check"
+                    android:tint="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- CONTENT CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!-- TANGGAL -->
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="#7A7A7A"
+                android:textSize="17sp"/>
+
+            <!-- JAM -->
+            <TextView
+                android:id="@+id/tvJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="#111111"
+                android:textSize="46sp"
+                android:textStyle="bold"/>
+
+            <!-- SPACE -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <!-- CARD INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_summary"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <!-- NAMA -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="#1E255E"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+
+                <!-- SPACE -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"/>
+
+                <!-- JABATAN -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jabatan"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvJabatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="#1E255E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <!-- SPACE -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"/>
+
+                <!-- LOKASI -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi Absensi"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textColor="#1E255E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- SPACE -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="28dp"/>
+
+            <!-- STATUS -->
+            <LinearLayout
+                android:id="@+id/layoutStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_status_green"
+                android:paddingStart="24dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvKeterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#22C55E"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- SPACE -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <!-- BUTTON -->
+            <LinearLayout
+                android:id="@+id/btnSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_button"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali ke Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

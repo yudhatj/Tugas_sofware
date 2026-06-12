@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/house"
+        android:title="Beranda"/>
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history"
+        android:title="Riwayat"/>
+
+    <item
+        android:id="@+id/nav_absen"
+        android:icon="@drawable/clipboard_list"
+        android:title="Absensi"/>
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/bell"
+        android:title="Notifikasi"/>
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/users"
+        android:title="Akun"/>
+
+</menu>
